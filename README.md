@@ -1,5 +1,4 @@
-
-As configurações do GIT são armazenadas no arquivo .gitconfig localizado dentro do diretório do usuário do Sistema Operacional
+⚠ | Não é um projeto completo de comandos git somente alguns mais usados no GitHub***
 
 ## ...git ajuda
 
@@ -93,5 +92,3 @@ Clonar um repositório remoto já existente
 ```bash
 git clone https://github.com/cod3rleo/cod3rleo.git
 ```
-
-### Não é um projeto completo de comandos git somente alguns mais usados no GitHub***
