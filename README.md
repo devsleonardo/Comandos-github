@@ -90,5 +90,5 @@ git fetch
 
 Clonar um repositório remoto já existente
 ```bash
-git clone https://github.com/cod3rleo/cod3rleo.git
+git clone https://github.com/devsleonardo/devsleonardo.git
 ```
