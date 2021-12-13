@@ -25,7 +25,7 @@ git status
 git add .
 git commit -m "Nome do commit "
 git branch -M main
-git remote add origin https://github.com/cod3rleo/cod3rleo.git
+git remote add origin https://github.com/devsleonardo/devsleonardo.git
 git push -u origin main
 ```
 Os repositórios podem ser colocados individualmente da seguinte forma
@@ -51,7 +51,7 @@ git remote -v
 ```
 Vincular repositório local com um repositório remoto
 ```bash
-git remote add origin https://github.com/cod3rleo/cod3rleo.git
+git remote add origin https://github.com/devsleonardo/devsleonardo.git
 ```
 Exibir informações dos repositórios remotos
 ```bash
