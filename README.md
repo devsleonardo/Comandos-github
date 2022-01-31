@@ -93,7 +93,7 @@ git clone https://github.com/devsleonardo/devsleonardo.git
 
 
 ## ... branches
-O master é o branch principal do GIT
+O main é o branch principal do GIT
 
 Criando um novo branch
 ```bash
@@ -118,9 +118,9 @@ Enviar o branch atual e definir o remoto como upstream
 ```
 
 
-Voltar para o branch principal (master)
+Voltar para o branch principal (main)
 ```bash
-git checkout master
+git checkout main
 ```
 
 
@@ -129,36 +129,27 @@ Resolver merge entre os branches
 git merge devsleonardo
 ```
 
-## ... stash
-
-Para alternar entre um branch e outro é necessário fazer o commit das alterações atuais para depois trocar para um outro branch. Se existir a necessidade de realizar a troca sem fazer o commit é possível criar um stash. O Stash como se fosse um branch temporário que contem apenas as alterações ainda não commitadas.
-
-Criar um stash
+Removendo uma branch local
 ```bash
-git stash
+git branch -d devsleonardo
 ```
+Caso você receba o seguinte erro:
 
+>error: The branch 'teste' is not fully merged.
 
-Listar stashes
+Isso significa que você possui algum commit recente nesta branch, e excluí-la significaria perder este commit
+
+Caso queira salvar algum commit, faça um merge com outra branch. Caso contrário, faça um force delete com o parâmetro -D
 ```bash
-git stash list
+git branch -D devsleonardo
 ```
+>Nos comandos acima, -d é um alias para --delete e -D é um alias para --delete --force
 
-
-Voltar para o último stash
+Removendo uma branch remota
 ```bash
-git stash apply
+git push origin --delete devsleonardo
 ```
-
-
-Voltar para um stash específico
+ou
 ```bash
-git stash apply stash@{2}
-```
->Onde 2 é o indíce do stash desejado
-
-
-Criar um branch a partir de um stash
-```bash
-git stash branch meu_branch
+git push origin :devsleonardo
 ```
