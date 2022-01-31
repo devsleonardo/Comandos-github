@@ -146,9 +146,5 @@ git branch -D devsleonardo
 
 Removendo uma branch remota
 ```bash
-git push origin --delete devsleonardo
-```
-ou
-```bash
-git push origin :devsleonardo
+git push origin --delete devsleonardo or/or git push origin :devsleonardo
 ```
