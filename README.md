@@ -143,7 +143,6 @@ Caso queira salvar algum commit, faça um merge com outra branch. Caso contrári
 ```bash
 git branch -D devsleonardo
 ```
->Nos comandos acima, -d é um alias para --delete e -D é um alias para --delete --force
 
 Removendo uma branch remota
 ```bash
