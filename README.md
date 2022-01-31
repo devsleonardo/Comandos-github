@@ -9,8 +9,6 @@ git help commit
 git help <qualquer_comando_git> 
 ```
 
-
-
 ## ... configurando Ambiente
  ```bash
 git config --global user.name "nomeGithub"
@@ -91,4 +89,76 @@ git fetch
 Clonar um repositório remoto já existente
 ```bash
 git clone https://github.com/devsleonardo/devsleonardo.git
+```
+
+
+## ... branches
+O master é o branch principal do GIT
+
+Criando um novo branch
+```bash
+git branch devsleonardo
+```
+
+Trocando para um branch existente
+```bash
+git checkout devsleonardo
+```
+
+>Neste caso, o ponteiro principal HEAD esta apontando para o branch chamado devsleonardo
+
+Criar um novo branch e trocar
+```bash
+git checkout -b devsleonardo
+```
+
+Enviar o branch atual e definir o remoto como upstream
+```bash
+ git push --set-upstream origin devsleonardo
+```
+
+
+Voltar para o branch principal (master)
+```bash
+git checkout master
+```
+
+
+Resolver merge entre os branches
+```bash
+git merge devsleonardo
+```
+
+## ... stash
+
+Para alternar entre um branch e outro é necessário fazer o commit das alterações atuais para depois trocar para um outro branch. Se existir a necessidade de realizar a troca sem fazer o commit é possível criar um stash. O Stash como se fosse um branch temporário que contem apenas as alterações ainda não commitadas.
+
+Criar um stash
+```bash
+git stash
+```
+
+
+Listar stashes
+```bash
+git stash list
+```
+
+
+Voltar para o último stash
+```bash
+git stash apply
+```
+
+
+Voltar para um stash específico
+```bash
+git stash apply stash@{2}
+```
+>Onde 2 é o indíce do stash desejado
+
+
+Criar um branch a partir de um stash
+```bash
+git stash branch meu_branch
 ```
